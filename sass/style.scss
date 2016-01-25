@@ -239,6 +239,27 @@ h2 {
 		}
 	}
 }
+/* ------------- Контейнер с адаптивными блоками------------- */
+.grid {
+
+}
+
+/* Элементы в виде плиток с содержанием */
+.grid-item {
+	display:inline-block;
+	background: #fff;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; /* Изменения алгоритма расчета ширины и высоты элемента.*/
+	-moz-box-sizing: border-box; /* Для Firefox */
+	-webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */
+
+}
+
+
+
+
+/*------------------ max-width: 992px ----------------------*/
 @media (max-width: 992px) { /* md */
 	.header .contact {
 		display: none;
@@ -356,6 +377,8 @@ h2 {
 		margin-top: -50px;
 	}
 }
+
+/*------------------ max-width: 760px ----------------------*/
 @media (max-width: 760px) {
 	.header {
 		height: 50px;
